@@ -17,7 +17,6 @@ import http from 'http';
     '.jpeg': 'image/jpeg',
     '.svg': 'image/svg+xml',
     '.ico': 'image/x-icon',
-    '.woff': 'font/woff',
     '.woff2': 'font/woff2',
   };
 
@@ -40,6 +39,6 @@ import http from 'http';
       res.end(data);
     });
   }).listen(PORT, '0.0.0.0', () => {
-    console.log('Server running on port ' + PORT);
+    console.log('Server listening on 0.0.0.0:' + PORT);
   });
   
